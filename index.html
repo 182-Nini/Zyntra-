@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,68 +10,59 @@
 body {
   margin:0;
   font-family:Arial, sans-serif;
-  background:black;
   color:white;
 }
 
-/* HERO */
+/* HERO COM IMAGEM PREMIUM */
 .hero {
   height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
   background-size:cover;
   background-position:center;
   display:flex;
   flex-direction:column;
   justify-content:center;
-  align-items:center;
-  text-align:center;
+  padding-left:30px;
 }
 
+/* TEXTO */
 .hero h1 {
   font-size:50px;
-  color:gold;
-  letter-spacing:3px;
+  letter-spacing:4px;
 }
 
 .hero p {
-  color:#ccc;
   max-width:300px;
+  color:#ccc;
 }
 
 /* BOTÃO */
 .btn {
-  margin-top:25px;
+  margin-top:20px;
   padding:15px 30px;
-  background:gold;
-  color:black;
+  border:1px solid white;
+  color:white;
   text-decoration:none;
-  border-radius:5px;
-  font-weight:bold;
+  display:inline-block;
 }
 
 /* CARDS */
 .section {
+  background:black;
   padding:40px 20px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
 }
 
 .card {
-  width:90%;
-  max-width:350px;
-  background:#111;
-  border:1px solid gold;
-  border-radius:12px;
-  padding:25px;
-  margin:15px 0;
-  text-align:center;
+  border:1px solid #444;
+  padding:20px;
+  margin:20px 0;
+  border-radius:10px;
 }
 
 .card h2 {
-  color:gold;
+  color:white;
 }
 
 /* WHATS */
@@ -84,7 +74,6 @@ body {
   padding:15px;
   border-radius:50%;
   color:white;
-  text-decoration:none;
 }
 </style>
 
@@ -92,27 +81,30 @@ body {
 
 <body>
 
-<!-- HERO -->
 <div class="hero">
   <h1>ZYNTRA</h1>
-  <p>Emagrecimento com definição muscular e avaliação gratuita</p>
 
-  <a href="https://wa.me/5532991601124" class="btn">
-    Agendar avaliação gratuita
+  <p>
+    Emagrecimento com definição muscular e precisão clínica  
+    <br><br>
+    <strong>Avaliação gratuita</strong>
+  </p>
+
+  <a href="https://wa.me/5511999999999" class="btn">
+    Agendar avaliação
   </a>
 </div>
 
-<!-- CARDS -->
 <div class="section">
 
   <div class="card">
     <h2>Protocolos personalizados</h2>
-    <p>Médicos especialistas e nutricionistas focados em resultado real</p>
+    <p>Médicos especialistas e nutricionistas</p>
   </div>
 
   <div class="card">
     <h2>Tratamento individualizado</h2>
-    <p>Baseado em testes genéticos para máxima precisão</p>
+    <p>Baseado em testes genéticos</p>
   </div>
 
   <div class="card">
@@ -124,135 +116,8 @@ body {
 
 </div>
 
-<!-- WHATS -->
 <a href="https://wa.me/5511999999999" class="whatsapp">💬</a>
 
 </body>
-</html><!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zyntra</title>
+</html>
 
-<style>
-body {
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:black;
-  color:white;
-}
-
-/* HERO */
-.hero {
-  height:100vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero h1 {
-  font-size:50px;
-  color:gold;
-  letter-spacing:3px;
-}
-
-.hero p {
-  color:#ccc;
-  max-width:300px;
-}
-
-/* BOTÃO */
-.btn {
-  margin-top:25px;
-  padding:15px 30px;
-  background:gold;
-  color:black;
-  text-decoration:none;
-  border-radius:5px;
-  font-weight:bold;
-}
-
-/* CARDS */
-.section {
-  padding:40px 20px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-
-.card {
-  width:90%;
-  max-width:350px;
-  background:#111;
-  border:1px solid gold;
-  border-radius:12px;
-  padding:25px;
-  margin:15px 0;
-  text-align:center;
-}
-
-.card h2 {
-  color:gold;
-}
-
-/* WHATS */
-.whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  padding:15px;
-  border-radius:50%;
-  color:white;
-  text-decoration:none;
-}
-</style>
-
-</head>
-
-<body>
-
-<!-- HERO -->
-<div class="hero">
-  <h1>ZYNTRA</h1>
-  <p>Emagrecimento com definição muscular e avaliação gratuita</p>
-
-  <a href="https://wa.me/5511999999999" class="btn">
-    Agendar avaliação gratuita
-  </a>
-</div>
-
-<!-- CARDS -->
-<div class="section">
-
-  <div class="card">
-    <h2>Protocolos personalizados</h2>
-    <p>Médicos especialistas e nutricionistas focados em resultado real</p>
-  </div>
-
-  <div class="card">
-    <h2>Tratamento individualizado</h2>
-    <p>Baseado em testes genéticos para máxima precisão</p>
-  </div>
-
-  <div class="card">
-    <h2>Blend de aminoácidos</h2>
-    <p>
-      Blend de aminoácidos associado a coenzimas, desenvolvido para otimizar a manutenção e o desenvolvimento da massa muscular durante o emagrecimento.
-    </p>
-  </div>
-
-</div>
-
-<!-- WHATS -->
-<a href="https://wa.me/5532991601124" class="whatsapp">💬</a>
-
-</body>
