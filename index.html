@@ -10,77 +10,72 @@ body {
   margin:0;
   font-family:Arial, sans-serif;
   color:white;
-  background:black;
 }
 
-/* HERO SILHUETA PREMIUM */
+/* HERO FUNCIONANDO */
 .hero {
   height:100vh;
-  background:
-    linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200');
+  background-image: url('https://images.unsplash.com/photo-1546484959-fdc9b5c8c3b6?q=80&w=1200');
   background-size:cover;
-  background-position:center right;
+  background-position:center;
   display:flex;
   flex-direction:column;
   justify-content:center;
   padding:40px;
 }
 
+/* OVERLAY LEVE */
+.hero::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+}
+
+.hero h1,
+.hero p,
+.btn {
+  position:relative;
+  z-index:1;
+}
+
 .hero h1 {
   font-size:52px;
   letter-spacing:4px;
-  font-weight:300;
 }
 
 .hero p {
   max-width:320px;
-  color:#ccc;
+  color:#ddd;
   margin-top:10px;
 }
 
-/* BOTÃO PREMIUM */
+/* BOTÃO */
 .btn {
   margin-top:25px;
   padding:15px 30px;
-  border:1px solid #ccc;
+  border:1px solid white;
   color:white;
   text-decoration:none;
   display:inline-block;
-  transition:0.3s;
-}
-
-.btn:hover {
-  background:#ccc;
-  color:black;
-}
-
-/* BADGE */
-.badge {
-  margin-top:15px;
-  color:#aaa;
-  font-size:14px;
 }
 
 /* CARDS */
 .section {
+  background:black;
   padding:50px 20px;
-  background:#0a0a0a;
 }
 
 .card {
-  border:1px solid #222;
+  border:1px solid #333;
   padding:25px;
   margin:20px 0;
   border-radius:10px;
-  background:#111;
 }
 
-.card h2 {
-  font-weight:400;
-}
-
-/* WHATS */
 .whatsapp {
   position:fixed;
   bottom:20px;
@@ -101,11 +96,11 @@ body {
 
   <p>
     Emagrecimento com definição muscular e precisão clínica
+    <br><br>
+    <strong>Avaliação gratuita</strong>
   </p>
 
-  <div class="badge">Avaliação gratuita • Vagas limitadas</div>
-
-  <a href="https://wa.me/5511999999999?text=Quero%20agendar%20uma%20avaliação" class="btn">
+  <a href="https://wa.me/5511999999999" class="btn">
     Agendar avaliação gratuita
   </a>
 </div>
@@ -114,19 +109,12 @@ body {
 
   <div class="card">
     <h2>Protocolos personalizados</h2>
-    <p>Médicos especialistas e nutricionistas focados em resultado real</p>
+    <p>Médicos especialistas e nutricionistas</p>
   </div>
 
   <div class="card">
     <h2>Tratamento individualizado</h2>
-    <p>Baseado em testes genéticos para máxima precisão</p>
-  </div>
-
-  <div class="card">
-    <h2>Blend de aminoácidos</h2>
-    <p>
-      Blend de aminoácidos associado a coenzimas, desenvolvido para otimizar a manutenção e o desenvolvimento da massa muscular durante o emagrecimento.
-    </p>
+    <p>Baseado em testes genéticos</p>
   </div>
 
 </div>
@@ -135,3 +123,5 @@ body {
 
 </body>
 </html>
+  
+
