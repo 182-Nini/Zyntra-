@@ -2,7 +2,18 @@
 <title>Zyntra</title>
 
 <style>
-body {
+body {.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   margin:0;
   font-family:Arial, sans-serif;
   background:#0a0a0a;
